@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Solution {
 
     // Binary Search Function: Find index of k
@@ -23,31 +21,4 @@ public class Solution {
         }
         return -1;
     }
-
-    // Main Method
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter size of array: ");
-        int n = scanner.nextInt();
-        int[] arr = new int[n];
-
-        System.out.println("Enter " + n + " sorted elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = scanner.nextInt();
-        }
-
-        System.out.print("Enter the number to search: ");
-        int k = scanner.nextInt();
-
-        int result = binarysearch(arr, k);
-
-        if (result != -1) {
-            System.out.println(k + " appears at index " + result + ".");
-        } else {
-            System.out.println(k + " is not present.");
-        }
-
-        scanner.close();
-    }
-}
+}    
