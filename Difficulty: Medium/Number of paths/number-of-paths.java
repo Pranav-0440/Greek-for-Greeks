@@ -1,0 +1,13 @@
+class Solution {
+    public int numberOfPaths(int m, int n) {
+        // Code Here
+        int N = n + m - 2;
+        int R = n - 1;
+        double res = 1;
+        
+        for(int i=1; i<=R; i++){
+            res = res * (N - R + i) / i;
+        }
+        return (int) res;
+    }
+}
